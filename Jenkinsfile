@@ -3,8 +3,8 @@ pipeline {
         label 'AGENT-1'
     }
     options{
-        timeout{time:30, unit: 'MINUTES'}
-        disabledConcurrentBuild()
+        timeout(time:30, unit: 'MINUTES')
+        disableConcurrentBuilds()
     }
     environment {
         appVersion = ''
