@@ -25,6 +25,8 @@ pipeline {
                     sh """
                       aws eks update-kubeconfig --region ${REGION} --name ${project}
                       kubectl get nodes 
+                      echo "appVersion = ${params.appVersion}"
+                      echo "deploy_to = ${params.deploy_to}"
                       sed -i "s/IMAGE_VERSION/${params.appVersion}/g" values-${params.deploy_to}.yaml
                       helm upgrade --install ${component} -f values-${params.deploy_to}.yaml -n ${project} .
                     """
