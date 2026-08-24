@@ -1,3 +1,3 @@
 deployment:
-  imageURL: 388343452532.dkr.ecr.us-east-1.amazonaws.com
+  imageURL: 388343452532.dkr.ecr.us-east-1.amazonaws.com/roboshop/catalogue
   imageVersion: IMAGE_VERSION
