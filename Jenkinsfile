@@ -12,7 +12,7 @@ pipeline {
         ACC_ID = '388343452532'
         project = 'roboshop'
         component = 'catalogue'
-        SCANNER_HOME = tool 'Sonar-scanner'
+        //SCANNER_HOME = tool 'Sonar-scanner'
     }  
     parameters {
         string(name: 'appversion', description: 'application image')
