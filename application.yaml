@@ -17,8 +17,8 @@ spec:
     server: "https://kubernetes.default.svc"
     namespace: kubeseal
   syncPolicy:
-  automated: # Enable automated synchronization
-    prune: true # Delete resources that are no longer in Git
-    selfHeal: true # Revert changes made manually in the cluster to match Git
-  syncOptions:
-    - CreateNamespace=true
+    automated: # Enable automated synchronization
+      prune: true # Delete resources that are no longer in Git
+      selfHeal: true # Revert changes made manually in the cluster to match Git
+    syncOptions:
+      - CreateNamespace=true
