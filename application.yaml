@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/daws-84s/catalogue-cd.git
+    repoURL: https://github.com/SRINUNAIK208/jenkins-catalogue-cd.git
     targetRevision: main
     path: .
     helm:
