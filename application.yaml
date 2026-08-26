@@ -15,7 +15,7 @@ spec:
       - values-qa.yaml
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: kubeseal
+    namespace: roboshop
   syncPolicy:
     automated: # Enable automated synchronization
       prune: true # Delete resources that are no longer in Git
